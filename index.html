@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic ES6 Boilerplate</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+  <div id="calc-display"><div id="number-display"></div><div id="sum-display"></div></div>
+
+  <div id="container">
+    <div class="buttons">
+      <button id="AC" value="" onclick="AcPress()">AC</button>  
+      <button id="CE" value="" onclick="CePress()">CE</button>  
+      <button id="divide-btn" value="/" onclick="operatorPress(this.value)">&divide;</button>  
+      <button id="multiply-btn" value="*" onclick="operatorPress(this.value)">x</button>  
+      <button id="7-btn" value="7" onclick="numberPress(this.value)">7</button>  
+      <button id="8-btn" value="8" onclick="numberPress(this.value)">8</button>  
+      <button id="9-btn" value="9" onclick="numberPress(this.value)">9</button>  
+      <button id="minus-btn" value="-" onclick="operatorPress(this.value)">-</button>  
+      <button id="4-btn" value="4" onclick="numberPress(this.value)">4</button>  
+      <button id="5-btn" value="5" onclick="numberPress(this.value)">5</button>  
+      <button id="6-btn" value="6" onclick="numberPress(this.value)">6</button>  
+      <button id="add-btn" value="+" onclick="operatorPress(this.value)">+</button>  
+      <button id="1-btn" value="1" onclick="numberPress(this.value)">1</button>  
+      <button id="2-btn" value="2" onclick="numberPress(this.value)">2</button>  
+      <button id="3-btn" value="3" onclick="numberPress(this.value)">3</button>  
+      <button id="equals-btn" value="=" onclick="equalsPress()">=</button>  
+      <button id="zero-btn" value="0" onclick="numberPress(this.value)">0</button>
+      <button id="decimal-btn" value="." onclick="numberPress(this.value)">.</button>
+    <div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

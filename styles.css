@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'digital-7';
+	src: url('font/digital-7.ttf'); 
+	src: 
+		url('font/digital-7.ttf') 
+		format('opentype');
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: url(moon-back-calc-min.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#calc-display {
+    position: relative;
+    margin: 20% auto 10px auto;
+    max-width: 300px;
+    width: 70%;
+    height: 150px;
+    background-color: black;
+    color: #00E320;
+    border-radius: 20px;
+    border: solid #D2A56D 10px;
+    text-align: center;
+    font-family: 'digital-7', sans-serif;
+    overflow-x: hidden; 
+}
+
+#container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: yellow;
+}
+
+#number-display {
+    position: relative;
+    margin-top: 10px;
+    height: 40px;
+    font-size: 4rem;
+}
+
+#sum-display {
+    position: absolute;
+    bottom: 0;
+    margin: 0 4px;
+    height: 40px;
+    font-size: 2rem;
+}
+
+button {
+    width: 24%;
+    display: inline-block;
+}
+
+#zero-btn {
+    width: 48%;
+}
+
+#decimal-btn {
+    width: 48%;
+}
