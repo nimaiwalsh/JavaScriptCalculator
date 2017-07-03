@@ -15,31 +15,32 @@ html {
 }
 
 body {
-    background: url(moon-back-calc-min.jpg) no-repeat center center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #01273C;
+}
+
+#moon {
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-400px);
+    width: 800px;
+    filter: blur(5px);
 }
 
 #calc-display {
     position: relative;
     margin: 20% auto 10px auto;
-    max-width: 300px;
+    max-width: 400px;
     width: 70%;
     height: 150px;
-    background-color: black;
-    color: #00E320;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #4285F4;
     border-radius: 20px;
     border: solid #D2A56D 10px;
     text-align: center;
     font-family: 'digital-7', sans-serif;
     overflow-x: hidden; 
-}
-
-#container {
-    width: 400px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: yellow;
 }
 
 #number-display {
@@ -57,15 +58,19 @@ body {
     font-size: 2rem;
 }
 
+.buttons {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 button {
-    width: 24%;
+    margin: 1px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
-}
-
-#zero-btn {
-    width: 48%;
-}
-
-#decimal-btn {
-    width: 48%;
+    flex-grow: 1;
+    /*4 buttons per row - 1/4 of parent width - 2 x margin width*/
+    width: calc(100% * (1/4) - 2px);
 }
