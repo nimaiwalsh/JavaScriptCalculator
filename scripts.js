@@ -1,8 +1,8 @@
 let number = '';
 let equation = '';
 let equalClicked = false;
-const calcDisplay = document.getElementById('calc-display').childNodes[0];
-const equationDisplay = document.getElementById('calc-display').childNodes[1];
+const calcDisplay = document.getElementById('number-display');
+const equationDisplay = document.getElementById('equation-display');
 
 function numberPress(num) {
     if (equalClicked) {
@@ -41,13 +41,12 @@ function operatorPress(operator) {
 }
 
 function equalsPress() {
-    //Rounce to 2 decimal place if the answer contains decimals
+    //Round to 2 decimal place if the answer contains decimals
     if (eval(equation) % 1 != 0) {
         number = eval(equation).toFixed(2);
     } else {
         number = eval(equation);
     }
-    
     calcDisplay.innerHTML = number;      
     equalClicked = true;
 }

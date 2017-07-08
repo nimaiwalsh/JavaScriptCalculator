@@ -15,24 +15,15 @@ html {
 }
 
 body {
+    background: url(moon-feature.svg) no-repeat center center fixed; 
     background-color: #01273C;
-}
-
-#moon {
-    z-index: -1;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-400px);
-    width: 800px;
-    filter: blur(5px);
 }
 
 #calc-display {
     position: relative;
-    margin: 20% auto 10px auto;
+    margin: 15% auto 10px auto;
     max-width: 400px;
-    width: 70%;
+    width: 80%;
     height: 150px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #4285F4;
@@ -50,7 +41,7 @@ body {
     font-size: 4rem;
 }
 
-#sum-display {
+#equation-display {
     position: absolute;
     bottom: 0;
     margin: 0 4px;
@@ -59,18 +50,49 @@ body {
 }
 
 .buttons {
-    width: 400px;
+    max-width: 400px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 button {
-    margin: 1px;
+    margin: 3px;
     width: 50px;
     height: 50px;
     display: inline-block;
     flex-grow: 1;
     /*4 buttons per row - 1/4 of parent width - 2 x margin width*/
-    width: calc(100% * (1/4) - 2px);
+    width: calc(100% * (1/4) - 6px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    outline: none;
+    text-shadow:1px 1px 0px #07526e;
+    cursor: pointer;
+    border: none;
+    background: #109bce;
+    background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 4px 0px 0px #07526e;
+}
+
+button:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 2px #999;
+}
+
+.social-icons {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+a:link, a:visited {
+    color: #07526e;
+}
+
+a:hover, a:active {
+    color:#2ab7ec;
 }

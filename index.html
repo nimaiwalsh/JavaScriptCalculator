@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Basic ES6 Boilerplate</title>
+  <title>FCC JavScript Calculator</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <img id="moon" src="moon-feature.svg" alt="moon" />
-
-  <div id="calc-display"><div id="number-display"></div><div id="sum-display"></div></div>
+  
+  <div id="calc-display"><div id="number-display"></div><div id="equation-display"></div></div>
 
   <div class="buttons">
     <button id="AC" value="" onclick="AcPress()">AC</button>  
@@ -29,7 +29,13 @@
     <button id="decimal-btn" value="." onclick="numberPress(this.value)">.</button>
     <button id="zero-btn" value="0" onclick="numberPress(this.value)">0</button>
     <button id="equals-btn" value="=" onclick="equalsPress()">=</button>  
-  <div>
+  </div>
+  
+  <div class="social-icons">
+    <a href="https://github.com/nimaiwalsh" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/nimaiwalsh" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://freecodecamp.com/nimaiwalsh" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+  </div>
 
   <script src="scripts.js"></script>
 </body>
